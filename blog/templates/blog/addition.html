@@ -1,0 +1,12 @@
+<h1>Ma super calculatrice</h1>
+<p>{{ nombre1 }} + {{ nombre2 }}, ça fait <strong>{{ total }}</strong> !<br />
+Nous pouvons également calculer la somme dans le template : {{ total }}.</p>
+
+<a href="{% url "date" %}">
+    Voir la date
+</a>
+<p>
+<a href="{% url "addition" 10 nombre1%}">
+  lien vers le somme de 10 et du premier nombre qui est {{ nombre1 }}
+</a>
+</p>
